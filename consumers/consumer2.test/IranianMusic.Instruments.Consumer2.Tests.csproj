@@ -1,0 +1,21 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+  <PropertyGroup>
+    <TargetFramework>netcoreapp2.1</TargetFramework>
+    <IsPackable>false</IsPackable>
+  </PropertyGroup>
+  <ItemGroup>
+    <PackageReference Include="Microsoft.NET.Test.Sdk" Version="15.8.0" />
+    <PackageReference Include="PactNet.OSX" Version="2.2.1" />
+    <PackageReference Include="PactNet.Windows" Version="2.2.1" />
+    <PackageReference Include="PactNet.Linux.x86" Version="2.2.1" />
+    <PackageReference Include="xunit" Version="2.3.1" />
+    <PackageReference Include="xunit.runner.visualstudio" Version="2.3.1" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\..\data.access\IranianMusic.Instruments.DataAccess\IranianMusic.Instruments.DataAccess.csproj">
+      <Project>{781741E8-DF9F-4029-BEB6-52BEB89B9A75}</Project>
+      <Name>IranianMusic.Instruments.DataAccess</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\shared\IranianMusic.Instruments.Shared.csproj" />
+  </ItemGroup>
+</Project>

@@ -1,0 +1,18 @@
+﻿<Project Sdk="Microsoft.NET.Sdk.Web">
+  <PropertyGroup>
+    <TargetFramework>netcoreapp2.1</TargetFramework>
+  </PropertyGroup>
+  <ItemGroup>
+    <Folder Include="wwwroot\" />
+  </ItemGroup>
+  <ItemGroup>
+    <PackageReference Include="Microsoft.AspNetCore.App" />
+    <PackageReference Include="Microsoft.AspNetCore.Razor.Design" Version="2.1.2" PrivateAssets="All" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\..\data.access\IranianMusic.Instruments.DataAccess\IranianMusic.Instruments.DataAccess.csproj">
+      <Project>{781741E8-DF9F-4029-BEB6-52BEB89B9A75}</Project>
+      <Name>IranianMusic.Instruments.DataAccess</Name>
+    </ProjectReference>
+  </ItemGroup>
+</Project>

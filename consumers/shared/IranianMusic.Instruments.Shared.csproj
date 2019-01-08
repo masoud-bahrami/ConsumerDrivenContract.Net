@@ -1,0 +1,12 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>netcoreapp2.1</TargetFramework>
+    <ApplicationIcon />
+    <OutputType>Library</OutputType>
+    <StartupObject />
+    <AssemblyName>IranianMusic.Instruments.Shared</AssemblyName>
+    <RootNamespace>IranianMusic.Instruments.Shared</RootNamespace>
+  </PropertyGroup>
+
+</Project>

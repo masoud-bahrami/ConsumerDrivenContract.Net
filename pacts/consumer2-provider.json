@@ -1,0 +1,63 @@
+{
+  "consumer": {
+    "name": "Consumer2"
+  },
+  "provider": {
+    "name": "Provider"
+  },
+  "interactions": [
+    {
+      "description": "An invalid GET request for Instruments with invalid name",
+      "providerState": "There is no Instrument",
+      "request": {
+        "method": "get",
+        "path": "/api/Instrument/San"
+      },
+      "response": {
+        "status": 404,
+        "headers": {
+        }
+      }
+    },
+    {
+      "description": "A valid GET request for Instruments with a secoundary instrument name",
+      "providerState": "Instrument is not Formal",
+      "request": {
+        "method": "get",
+        "path": "/api/Instrument/Daf"
+      },
+      "response": {
+        "status": 400,
+        "headers": {
+          "Content-Type": "application/json; charset=utf-8"
+        },
+        "body": {
+          "message": "Daf is a secoundary Instrument"
+        }
+      }
+    },
+    {
+      "description": "A valid GET request for Instruments with successfully response",
+      "providerState": "Instrument is Formal",
+      "request": {
+        "method": "get",
+        "path": "/api/Instrument/Santur"
+      },
+      "response": {
+        "status": 200,
+        "headers": {
+          "Content-Type": "application/json; charset=utf-8"
+        },
+        "body": {
+          "result": "Success",
+          "data": "The santur was invented and developed in the area of Iran, Kuwait, Syria and Turkey,\r\n                                     and parts of Mesopotamia (modern-day Iraq). \r\n                                     This instrument was traded and traveled to different parts of the middle east \r\n                                     and each country customized and designed their own versions to adapt to their musical \r\n                                     scales and tunings.\r\n                                     The original santur was made with tree bark, stones and stringed with goat intestines.\r\n                                     The Mesopotamian santur is also the father of the harp, the Chinese yangqin, the harpsichord,\r\n                                     the qanun, the cimbalom and the American and European hammered dulcimers."
+        }
+      }
+    }
+  ],
+  "metadata": {
+    "pactSpecification": {
+      "version": "2.0.0"
+    }
+  }
+}
