@@ -23,5 +23,5 @@ Certainly, any software; deals with other sections, including the database, file
 
 ***
 
-End-to-End test are write against the production version of the software(in production or production-like environments). Actually E2E tests, test the software against its interface.
+End-to-End test are write against the production version of the software(in production or production-like environments). Actually E2E test, tests the software against its interface.
 ![E2E tests](https://martinfowler.com/articles/practical-test-pyramid/e2etests.png)
