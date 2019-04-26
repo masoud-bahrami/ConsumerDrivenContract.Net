@@ -28,7 +28,7 @@ End-to-End tests are write against the production version of the software(in pro
 
 ## Contract Tests
 
-One of the most common forms of end-to-end testing are the **API test**.
+One of the most common forms of end-to-end testing is the **API test**.
 When we talk about the api test, we really want to test api contracts. The server and its consumers can communicate in two ways. 
 * The server can change the contract whenever it wants, and consumers must adapt to it
 * The API contract is drived from consumers needs and so server only change contracts if the change does not break any consumer.
